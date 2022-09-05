@@ -3,6 +3,8 @@
     "target": "esnext",
     "module": "esnext",
     "strict": true,
+    "declaration": true,
+    "outDir": "lib",
     "jsx": "preserve",
     "moduleResolution": "node",
     "skipLibCheck": true,
@@ -10,7 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "baseUrl": ".",
     "types": [
       "webpack-env",
@@ -33,10 +35,12 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "src/main.ts",
+    "src/App.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
   ]
 }
